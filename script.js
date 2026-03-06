@@ -12,6 +12,11 @@ function isPalindroma(word) {
     const reverseWord = []
     for (let i = word.length - 1; i >= 0; i--)
         reverseWord.push(word[i])
-    
+
+    if (reverseWord == word) {
+        return true
+    } else {
+        return false
+    }
 
 }
