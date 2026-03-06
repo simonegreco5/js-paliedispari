@@ -16,6 +16,7 @@ function isPalindroma(word) {
     for (let i = word.length - 1; i >= 0; i--) {
 
       reverseWord.push(word[i])
+      console.log(reverseWord)
 
       if (reverseWord === word) {
           return true
@@ -27,4 +28,7 @@ function isPalindroma(word) {
 
 }
 
-// isPalindroma(getName)
+isPalindroma(getName)
+
+
+// esercizio 2 pari e dispari
