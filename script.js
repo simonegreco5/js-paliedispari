@@ -9,14 +9,22 @@ let getName = prompt('type a word')
 // inserita è un palindroma.
 
 function isPalindroma(word) {
-    const reverseWord = []
-    for (let i = word.length - 1; i >= 0; i--)
-        reverseWord.push(word[i])
 
-    if (reverseWord == word) {
-        return true
-    } else {
-        return false
+    // creiamo un array per inserire la parola invertita
+    // utilizzando il ciclo for
+    const reverseWord = []
+    for (let i = word.length - 1; i >= 0; i--) {
+
+      reverseWord.push(word[i])
+
+      if (reverseWord === word) {
+          return true
+      } else {
+          return false
+      }
+
     }
 
 }
+
+// isPalindroma(getName)
