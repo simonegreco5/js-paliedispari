@@ -63,20 +63,26 @@ let sommaNumeri = numeroUtente + numeroComputer
 function isEven(number) {
 
     if (number % 2 === 0) {
-        console.log('pari')
+        // console.log('pari') -> oppure così
+        return 'pari'
     } else {
-        console.log('dispari')
+        // console.log('dispari') -> oppure così
+        return 'dispari'
     }
 }
 
 // inizializziamo una varibile e chiamiamo la funzione
 // per verificare se la somma dei numeri è pari o dispari
-isEven(sommaNumeri)
+
+// isEven(sommaNumeri) -> oppure così
+let risultato = isEven(sommaNumeri)
+console.log(risultato)
 
 // dichiariamo chi ha vinto confrontando la funzione (isEven)
 // con (getPariDispari) ovvero la scelta iniziale dell'utente
 
-if (isEven(sommaNumeri) === getPariDispari) {
+// if (isEven(sommaNumeri) === 0) -> oppure così
+if (risultato === getPariDispari) {
     console.log('HAI VINTO')
 } else {
     console.log('ha vinto il computer')
