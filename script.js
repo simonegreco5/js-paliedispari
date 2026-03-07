@@ -32,3 +32,25 @@ isPalindroma(getName)
 
 
 // esercizio 2 pari e dispari
+
+// chiediamo all'utente di scegliere pari o dispari
+let getPariDispari = prompt('scegli: pari o dispari?')
+
+
+// chiediamo all'utente di scegliere un numero da 1 a 5
+let numeroUtente = prompt('scrivi un numero da 1 a 5')
+
+// generiamo un numero casuale generato dal computer (sempre da 1 a 5)
+// usando una funzione
+
+function getNumber(numb1, numb2) {
+    let x = Math.floor(Math.random() * numb2) + numb1
+
+    return x
+}
+
+// inserire all'interno della funzione gli argomenti numb1 e numb2
+// rispettivamente l'intervallo di inizio e di fine
+
+// inzializziamo una variabile per chiamare la funzione (getNumber)
+let numeroComputer = getNumber(1, 5)
