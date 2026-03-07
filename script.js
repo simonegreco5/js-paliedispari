@@ -69,7 +69,16 @@ function isEven(number) {
     }
 }
 
-// chiamiamo la funzione per verificare se la somma dei numeri
-// è pari o dispari
+// inizializziamo una varibile e chiamiamo la funzione
+// per verificare se la somma dei numeri è pari o dispari
 isEven(sommaNumeri)
+
+// dichiariamo chi ha vinto confrontando la funzione (isEven)
+// con (getPariDispari) ovvero la scelta iniziale dell'utente
+
+if (isEven(sommaNumeri) === getPariDispari) {
+    console.log('HAI VINTO')
+} else {
+    console.log('ha vinto il computer')
+}
 
