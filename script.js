@@ -30,7 +30,7 @@ function isPalindroma(word) {
 
 isPalindroma(getName)
 
-
+// _________________________________________
 // esercizio 2 pari e dispari
 
 // chiediamo all'utente di scegliere pari o dispari
@@ -56,3 +56,20 @@ function getNumber(numb1, numb2) {
 // inzializziamo una variabile per chiamare la funzione (getNumber)
 let numeroComputer = getNumber(1, 5)
 console.log(numeroComputer)
+
+// sommiamo numeroUtente e numeroComputer
+let sommaNumeri = numeroUtente + numeroComputer
+
+function isEven(number) {
+
+    if (number % 2 === 0) {
+        console.log('pari')
+    } else {
+        console.log('dispari')
+    }
+}
+
+// chiamiamo la funzione per verificare se la somma dei numeri
+// è pari o dispari
+isEven(sommaNumeri)
+
