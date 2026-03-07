@@ -1,5 +1,6 @@
 console.log('js-paliedispari')
 
+// __________________________________________
 // esercizio 1 palindroma
 
 // chiediamo all'utente di inserire una parola.
@@ -15,20 +16,42 @@ function isPalindroma(word) {
     const reverseWord = []
     for (let i = word.length - 1; i >= 0; i--) {
 
+    //   console.log(word[i])
       reverseWord.push(word[i])
       console.log(reverseWord)
 
-      if (reverseWord === word) {
-          return true
-      } else {
-          return false
-      }
+    }
 
+    // rendiamo l'array (reverseWord) una stringa con 
+    // il metodo join() -> mettiamo le virgolette nel join('')
+    // per eliminare le virgole generate dall'array 
+    // altrimenti il console.log di reverseWord sarebbe: a,n,n,a
+    // e non si potrebbe confrontare (in questo caso) cpn word
+    console.log(reverseWord.join('')) 
+
+    if (reverseWord.join('') === word) {
+        return true
+    } else {
+        return false
     }
 
 }
 
-isPalindroma(getName)
+// inzializziamo una variabile per chiamare la funzione (getName)
+let resultFunction = isPalindroma(getName)
+// console.log(resultFunction)
+
+// infine comunichiamo se la parola è un palindroma oppure no
+if (resultFunction === true) {
+    console.log('la parola è un palindroma');
+} else {
+    console.log('la parola non è un palindroma');
+}
+
+
+
+
+
 
 // _________________________________________
 // esercizio 2 pari e dispari
